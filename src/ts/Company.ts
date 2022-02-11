@@ -15,4 +15,10 @@ export class Company {
     lat: number;
     lng: number;
   };
+  markerContent(): string {
+    return `<div>
+      <h4>Company Name: ${this.companyName}</h4>
+      <h5>Catch Phrase: ${this.catchPhrase}</h5>
+      </div>`;
+  }
 }

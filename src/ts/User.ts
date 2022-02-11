@@ -14,4 +14,7 @@ export class User {
     lat: number;
     lng: number;
   };
+  markerContent(): string {
+    return `<h4>User Name: ${this.name}</h4>`;
+  }
 }
